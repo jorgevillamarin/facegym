@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconocimiento Facial en el Navegador</title>
+</head>
+<body>
+    <h1>Reconocimiento Facial en el Navegador</h1>
+    <div style="display: flex; align-items: center;">
+        <video id="video" width="720" height="560" autoplay muted></video>
+        <div style="margin-left: 20px;">
+            <input type="text" id="nameInput" placeholder="Nombre del rostro">
+            <button id="saveFaceButton">Guardar Rostro</button>
+        </div>
+    </div>
+    <canvas id="canvas"></canvas>
+
+    <!-- Incluye Face API.js desde el CDN -->
+    <script defer src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api@latest/dist/face-api.min.js"></script>
+    <!-- Enlace a nuestro archivo JavaScript -->
+    <script defer src="script.js"></script>
+</body>
+</html>
